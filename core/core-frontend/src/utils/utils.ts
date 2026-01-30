@@ -112,12 +112,7 @@ export const cleanPlatformFlag = () => {
   return false
 }
 export const isInIframe = () => {
-  try {
-    return window.top !== window.self
-  } catch (error) {
-    console.error(error)
-    return true
-  }
+  return false
 }
 
 export const isBtnShow = (val: string) => {
